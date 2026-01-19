@@ -1,0 +1,104 @@
+.jokeContainer {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.light {
+  background: #fff;
+  color: #000;
+}
+
+.dark {
+  background: #333;
+  color: #fff;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.themeButton {
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dark .themeButton {
+  background: #222;
+  color: white;
+}
+
+.categorySelector {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  label {
+    margin-right: 0.5rem;
+  }
+}
+
+.jokeBox {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.04);
+  .dark & {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.setup {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.punchline {
+  font-style: italic;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  border: none;
+  border-radius: 8px;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.dark .button {
+  background-color: #5555ff;
+}
+
+@media (max-width: 500px) {
+  .jokeContainer {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
